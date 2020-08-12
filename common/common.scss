@@ -30,9 +30,13 @@
       text-align: center;
     }
     span.subHeader {
-      display: block;
-      font-size: 12px;
-      line-height: 20px;
+      display: none;
+
+      @media (min-width: 1520px) {
+        display: block;
+        font-size: 12px;
+        line-height: 20px;
+      }
     }
   }
 }
