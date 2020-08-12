@@ -14,8 +14,10 @@
   margin: 0;
   .headerLink {
     list-style: none;
-    color: rgb(25, 53, 91);
     display: block;
+    a {
+      color: #19355b;
+    }
     span.mainHeader {
       padding: 6px 10px;      
       font-size: 16px;
