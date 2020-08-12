@@ -14,10 +14,18 @@
   margin: 0;
   .headerLink {
     list-style: none;
-    a {
-      padding: 6px 10px;
-      color: $header_primary;
-      font-size: $font-up-1;
+    color: rgb(25, 53, 91);
+    display: block;
+    span.mainHeader {
+      padding: 6px 10px;      
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    span.subHeader {
+      font-size: 12px;
+      line-height: 20px;
     }
   }
 }
