@@ -100,15 +100,5 @@
     );
   });
 
-  api.decorateWidget("home-logo:after", helper => {
-    let titleVisible = helper.attrs.minimized;
-    if (titleVisible) {
-      $(".d-header").addClass("hide-menus");
-    } else {
-      $(".d-header").removeClass("hide-menus");
-    }
-  });
+
 </script>
-<div class="hello-world-banner">
-  <h1 class="hello-world">Hello World!</h1>
-</div>
