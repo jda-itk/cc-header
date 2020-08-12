@@ -12,13 +12,16 @@
           href: "https://talk.collegeconfidential.com/",
           target: "self"
         },
-        h(
-          `span.mainHeader`,
+        [
+          h(
+            `span.mainHeader`,
+            "FORUMS"
+          ),
           h(
             `span.subHeader`,
             "Community Discussions"
           )
-        )
+        ]
       )
     )
   );
@@ -31,15 +34,16 @@
         {
           href: "https://www.collegeconfidential.com/schools",
           target: "self"
-        },
-        h(
-          `span.mainHeader`,
-          "SCHOOLS"
-        ),
-        h(
-          `span.subHeader`,
-          "Find Your Best Fit"
-        )
+        },[
+          h(
+            `span.mainHeader`,
+            "SCHOOLS"
+          ),
+          h(
+            `span.subHeader`,
+            "Find Your Best Fit"
+          )
+        ]
       )
     )
   );
@@ -53,14 +57,16 @@
           href: "https://www.collegeconfidential.com/careers",
           target: "self"
         },
-        h(
-          `span.mainHeader`,
-          "CAREERS"
-        ),
-        h(
-          `span.subHeader`,
-          "Choose the Right Path"
-        )
+        [
+          h(
+            `span.mainHeader`,
+            "CAREERS"
+          ),
+          h(
+            `span.subHeader`,
+            "Choose the Right Path"
+          )
+        ]
       )
     )
   );
@@ -74,14 +80,16 @@
           href: "https://insights.collegeconfidential.com/",
           target: "self"
         },
-        h(
-          `span.mainHeader`,
-          "GUIDANCE"
-        ),
-        h(
-          `span.subHeader`,
-          "Expert Advice & Insights"
-        )
+        [
+          h(
+            `span.mainHeader`,
+            "GUIDANCE"
+          ),
+          h(
+            `span.subHeader`,
+            "Expert Advice & Insights"
+          )
+        ]
       )
     )
   );
