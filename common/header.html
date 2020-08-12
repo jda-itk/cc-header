@@ -12,14 +12,13 @@
           href: "https://talk.collegeconfidential.com/",
           target: "self"
         },
-        h(
-          `span.mainHeader`,
-          "FORUMS"
-        ),
-        h(
-          `span.subHeader`,
-          "Community Discussions"
-        )
+        children: [
+          createElement('img', {
+            attrs: {
+              src: 'https://media.giphy.com/media/cuPm4p4pClZVC/giphy.gif',
+            },
+          }),
+        ]
       )
     )
   );
