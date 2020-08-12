@@ -1,6 +1,9 @@
 @import "common/foundation/variables";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+body {
+  font-family: Montserrat;
+}
 
 .d-header {
   &.hide-menus {
@@ -19,7 +22,7 @@
     padding: 0px 16px;
     a {
       color: #19355b !important;
-      font-family: Montserrat, Helvetica, sans-serif;
+      font-family: Montserrat;
       
       &:hover {
         text-decoration: none;

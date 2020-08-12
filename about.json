@@ -1,6 +1,5 @@
 {
   "name": "CC Header",
   "about_url": "https://some.url.com",
-  "license_url": "https://github.com/jda-itk/cc-header/blob/master/LICENSE",
-  "component": true
+  "license_url": "https://github.com/jda-itk/cc-header/blob/master/LICENSE"
 }
