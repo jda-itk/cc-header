@@ -20,6 +20,13 @@
     a {
       color: #19355b !important;
       font-family: Montserrat, Helvetica, sans-serif;
+      
+      &:hover {
+        text-decoration: none;
+        span:first-child {
+          color: #d08a39;
+        }
+      }
     }
     span.mainHeader {
       display: block;    
