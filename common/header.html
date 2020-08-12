@@ -1,53 +1,63 @@
 <script type="text/discourse-plugin" version="0.8.20">
-  const customHeaderLinks = settings.Custom_header_links;
-  const linksPosition = (settings.links_position === "right") ? "header-buttons:before" : "home-logo:after";
-
-  if (!customHeaderLinks.length) return;
-
+  const linksPosition = "home-logo:after";
   const h = require("virtual-dom").h;
   const headerLinks = [];
 
-  customHeaderLinks.split("|").map(i => {
-    const seg = $.map(i.split(","), $.trim);
-    const linkText = seg[0];
-    const linkTitle = seg[1];
-    const linkHref = seg[2];
-    const deviceClass = `.${seg[3]}`;
-    const linkTarget = seg[4] === "self" ? "" : "_blank";
-    const keepOnScrollClass = seg[5] === "keep" ? ".keep" : "";
-    const linkClass = `.${linkText.trim().toLowerCase().replace(/\s/gi, '-')}-custom-header-links`;
+  headerLinks.push(
+    h(
+      `li.headerLink.vdo.keep.forums-custom-header-links`,
+      h(
+        "a",
+        {
+          href: "https://talk.collegeconfidential.com/",
+          target: "self"
+        },
+        "FORUMS"
+      )
+    )
+  );
 
-    if (!linkTarget) {
-      headerLinks.push(
-        h(
-          `li.headerLink${deviceClass}${keepOnScrollClass}${linkClass}`,
-          h(
-            "a",
-            {
-              title: linkTitle,
-              href: linkHref
-            },
-            linkText
-          )
-        )
-      );
-    } else {
-      headerLinks.push(
-        h(
-          `li.headerLink${deviceClass}${keepOnScrollClass}${linkClass}`,
-          h(
-            "a",
-            {
-              title: linkTitle,
-              href: linkHref,
-              target: linkTarget
-            },
-            linkText
-          )
-        )
-      );
-    }
-  });
+  headerLinks.push(
+    h(
+      `li.headerLink.vdo.keep.schools-custom-header-links`,
+      h(
+        "a",
+        {
+          href: "https://www.collegeconfidential.com/schools",
+          target: "self"
+        },
+        "SCHOOLS"
+      )
+    )
+  );
+
+  headerLinks.push(
+    h(
+      `li.headerLink.vdo.keep.careers-custom-header-links`,
+      h(
+        "a",
+        {
+          href: "https://www.collegeconfidential.com/careers",
+          target: "self"
+        },
+        "CAREERS"
+      )
+    )
+  );
+  
+  headerLinks.push(
+    h(
+      `li.headerLink.vdo.keep.insights-custom-header-links`,
+      h(
+        "a",
+        {
+          href: "https://insights.collegeconfidential.com/",
+          target: "self"
+        },
+        "GUIDANCE"
+      )
+    )
+  );
 
   api.decorateWidget(linksPosition, helper => {
     return helper.h(
