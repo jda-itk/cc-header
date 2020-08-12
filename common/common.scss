@@ -32,12 +32,15 @@ body {
       }
     }
     span.mainHeader {
-      display: block;    
+      display: none;    
       font-size: 16px;
       line-height: 26px;
       text-transform: uppercase;
       font-weight: 700;
       text-align: center;
+      @media (min-width: 600px) {
+        display: block;
+      }
     }
     span.subHeader {
       display: none;
