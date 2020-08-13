@@ -1,11 +1,14 @@
 <script type="text/discourse-plugin" version="0.8.20">
+
+  // Add Custom Header Links
+
   const linksPosition = "home-logo:after";
   const h = require("virtual-dom").h;
   const headerLinks = [];
 
   headerLinks.push(
     h(
-      `li.headerLink.vdo.keep.forums-custom-header-links`,
+      `li.headerLink.vdm.keep.forums-custom-header-links`,
       h(
         "a",
         {
@@ -28,7 +31,7 @@
 
   headerLinks.push(
     h(
-      `li.headerLink.vdo.keep.schools-custom-header-links`,
+      `li.headerLink.vdm.keep.schools-custom-header-links`,
       h(
         "a",
         {
@@ -50,7 +53,7 @@
 
   headerLinks.push(
     h(
-      `li.headerLink.vdo.keep.careers-custom-header-links`,
+      `li.headerLink.vdm.keep.careers-custom-header-links`,
       h(
         "a",
         {
@@ -73,7 +76,7 @@
   
   headerLinks.push(
     h(
-      `li.headerLink.vdo.keep.insights-custom-header-links`,
+      `li.headerLink.vdm.keep.insights-custom-header-links`,
       h(
         "a",
         {
@@ -98,6 +101,40 @@
     return helper.h(
       "ul.custom-header-links", headerLinks
     );
+  });
+
+  // Add Custom Hamburger Links
+
+  api.decorateWidget("hamburger-menu:generalLinks", () => {
+    return {
+      href: "https://talk.collegeconfidential.com/",
+      rawLabel: "FORUMS",
+      className: "custom-hamburger-link forums"
+    };
+  });
+
+  api.decorateWidget("hamburger-menu:generalLinks", () => {
+    return {
+      href: "https://www.collegeconfidential.com/schools",
+      rawLabel: "SCHOOLS",
+      className: "custom-hamburger-link schools"
+    };
+  });
+
+  api.decorateWidget("hamburger-menu:generalLinks", () => {
+    return {
+      href: "https://www.collegeconfidential.com/careers",
+      rawLabel: "CAREERS",
+      className: "custom-hamburger-link careers"
+    };
+  });
+
+  api.decorateWidget("hamburger-menu:generalLinks", () => {
+    return {
+      href: "https://insights.collegeconfidential.com/",
+      rawLabel: "GUIDANCE",
+      className: "custom-hamburger-link insights"
+    };
   });
 
 </script>
