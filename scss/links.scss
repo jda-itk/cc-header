@@ -1,0 +1,228 @@
+
+@import "common/foundation/variables";
+
+
+.select-kit.dropdown-select-box.period-chooser .period-chooser-header h2.selected-name .date-section {
+    color: #19355B;
+}
+.discourse-no-touch .topic-body .actions .fade-out, nav.post-controls .actions button.create .d-icon {
+    opacity: 1;
+    color: #19355B;
+}
+
+table th {
+    color: #19355B;
+}
+
+.btn {
+    &-flat {
+        .d {
+            &-icon {
+                color: #19355B;
+            }
+        }
+    }
+}
+
+.names {
+    span {
+        a {
+            color: #3d3f3b;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }    
+}
+
+#topic {
+    &-title {
+        h1 {
+            a {
+                &.fancy-title {
+                    color: #19355B;
+                }      
+            }   
+        }
+    }
+}
+
+.nav{
+    &-pills {
+        li {
+            a {
+                color: #19355B;
+                &.active {
+                    background-color: #E88A19;
+                    
+                    &:hover {
+                        background-color: #E88A19;
+                    }
+                }
+                &:hover {
+                    background-color: #e88a19a3;
+                    color: #fff;
+                }
+            }
+            
+        }
+    }   
+}
+
+.topic { 
+    &-meta {
+        &-data {
+            .names {
+                .username {
+                    a {
+                        color: #3d3f4b;
+                    }
+                } 
+            }
+        }
+    }
+    &-list {
+        .num {
+            font-size: 14px;
+            color: #3d3f4b;
+            font-weight: 600;
+            a {
+                &.badge {
+                    &-posts {
+                        font-size: 14px;
+                        color: #3d3f4b;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .topic {
+            &-excerpt {
+                font-size: 14px;
+            }   
+        }
+        &-item {
+            &.visited {
+                .main {
+                    &-link {
+                        a.title {
+                            color: #3f76be;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            &-link {
+                a.title {
+                    color: #3f76be;
+                    font-size: 16px;
+                    font-weight: 600;
+                    
+                    &:hover {
+                        color: #E88A19;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.latest {
+    &-topic {
+        &-list {
+            &-item {
+                .topic {
+                    &-last {
+                        &-activity {
+                            a {
+                                color: #3d3f4b;
+                                font-size: 14px;
+                            }
+                        }
+                    }    
+                }
+                &.visited {
+                    .main {
+                        &-link {
+                            a {
+                                &.title {
+                                    color: #3f76be;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+                .main {
+                    &-link {
+                        a.title {
+                            color: #3f76be;
+                            font-size: 16px;
+                            font-weight: 600;
+                    
+                            &:hover {
+                                color: #E88A19;
+                            } 
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}
+
+.category {
+    &-list {
+        .category {
+            .category {
+                &-name {
+                    color: #3f76be;
+                    font-size: 16px;
+                    font-weight: 600;       
+
+                   &:hover {
+                        color: #E88A19;
+                    }
+                }
+                &-description {
+                    color: #3d3f4b;
+                    font-size: 14px;
+                }
+            }
+        }
+        .topics {
+            .value {
+                color: #3d3f4b;
+                font-size: 14px;
+            }
+        }
+    } 
+}
+
+.badge {
+    &-posts {
+        span {
+            font-size: 14px;
+            color: #3d3f4b;   
+        }
+    }
+    &-wrapper {
+        .badge {
+            &-category {
+                .category-name {
+                    color: #3d3f4b;
+                    font-size: 14px;
+                }   
+            }
+        }
+    }
+}
+
+a {
+    &.mention {
+        color: #E88A19;
+        font-weight: 500;
+    }
+}
