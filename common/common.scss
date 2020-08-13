@@ -28,10 +28,6 @@ body {
     a {
       color: #19355b !important;
       font-family: Montserrat;
-
-      .active {
-        color: #d08a39;
-      }
       
       &:hover {
         text-decoration: none;
@@ -47,6 +43,11 @@ body {
       text-transform: uppercase;
       font-weight: 700;
       text-align: center;
+
+      .active {
+        color: #d08a39;
+      }
+
       @media (min-width: 601px) {
         display: block;
       }
