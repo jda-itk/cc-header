@@ -43,6 +43,7 @@ body {
       text-transform: uppercase;
       font-weight: 700;
       text-align: center;
+
       @media (min-width: 601px) {
         display: block;
       }
@@ -57,6 +58,13 @@ body {
       }
     }
   }
+
+  .active {
+    span.mainHeader {
+      color: #d08a39 !important;
+    }
+  }
+
 }
 
 .menu-panel {
@@ -81,6 +89,13 @@ body {
         }
       }
     }
+
+    .active {
+      span.d-label {
+        color: #d08a39 !important;
+      }
+    }
+
   }
 }
 
