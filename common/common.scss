@@ -58,6 +58,17 @@ body {
   }
 }
 
+.custom-hamburger-link {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  @media (min-width: 601px) {
+    display: none;
+  }
+} 
+
 .desktop-view .vmo,
 .mobile-view .vdo {
   display: none !important;
