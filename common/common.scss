@@ -38,14 +38,14 @@ body {
       text-transform: uppercase;
       font-weight: 700;
       text-align: center;
-      @media (min-width: 599px) {
+      @media (min-width: 601px) {
         display: block;
       }
     }
     span.subHeader {
       display: none;
 
-      @media (min-width: 899px) {
+      @media (min-width: 901px) {
         display: block;
         font-size: 12px;
         line-height: 20px;
