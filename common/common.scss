@@ -6,6 +6,10 @@ body {
 }
 
 .d-header {
+  #site-logo {
+    max-width: none;
+  }
+
   &.hide-menus {
     .headerLink:not(.keep) {
       display: none;
