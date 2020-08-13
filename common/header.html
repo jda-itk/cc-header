@@ -105,11 +105,35 @@
 
   // Add Custom Hamburger Links
 
-  api.decorateWidget("hamburger-menu:faqLink", () => {
+  api.decorateWidget("hamburger-menu:generalLinks", () => {
     return {
       href: "https://talk.collegeconfidential.com/",
       rawLabel: "FORUMS",
       className: "custom-hamburger-link forums"
+    };
+  });
+
+  api.decorateWidget("hamburger-menu:generalLinks", () => {
+    return {
+      href: "https://www.collegeconfidential.com/schools",
+      rawLabel: "SCHOOLS",
+      className: "custom-hamburger-link schools"
+    };
+  });
+
+  api.decorateWidget("hamburger-menu:generalLinks", () => {
+    return {
+      href: "https://www.collegeconfidential.com/careers",
+      rawLabel: "CAREERS",
+      className: "custom-hamburger-link careers"
+    };
+  });
+
+  api.decorateWidget("hamburger-menu:generalLinks", () => {
+    return {
+      href: "https://insights.collegeconfidential.com/",
+      rawLabel: "GUIDANCE",
+      className: "custom-hamburger-link insights"
     };
   });
 
