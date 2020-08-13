@@ -28,6 +28,10 @@ body {
     a {
       color: #19355b !important;
       font-family: Montserrat;
+
+      .active {
+        color: #d08a39;
+      }
       
       &:hover {
         text-decoration: none;
