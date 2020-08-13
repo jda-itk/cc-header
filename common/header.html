@@ -1,4 +1,7 @@
 <script type="text/discourse-plugin" version="0.8.20">
+
+  // Add Custom Header Links
+
   const linksPosition = "home-logo:after";
   const h = require("virtual-dom").h;
   const headerLinks = [];
@@ -98,6 +101,16 @@
     return helper.h(
       "ul.custom-header-links", headerLinks
     );
+  });
+
+  // Add Custom Hamburger Links
+
+  api.decorateWidget("hamburger-menu:generalLinks", () => {
+    return {
+      href: https://talk.collegeconfidential.com/,
+      rawLabel: "FORUMS",
+      className: "custom-hamburger-link forums"
+    };
   });
 
 </script>
