@@ -89,6 +89,13 @@ body {
         }
       }
     }
+
+    .active {
+      span.d-label {
+        color: #d08a39 !important;
+      }
+    }
+
   }
 }
 
