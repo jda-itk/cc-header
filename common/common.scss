@@ -44,7 +44,7 @@ body {
       font-weight: 700;
       text-align: center;
 
-      .active {
+      &.active {
         color: #d08a39;
       }
 
