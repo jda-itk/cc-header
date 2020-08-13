@@ -3,6 +3,5 @@
   "about_url": "https://some.url.com",
   "license_url": "https://github.com/jda-itk/cc-header/blob/master/LICENSE",
   "assets": {
-    "links-css": "assets/links.scss"
   }
 }
