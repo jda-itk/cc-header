@@ -58,9 +58,10 @@ body {
   }
 }
 
-.hamburger-panel { 
-
-    .custom-hamburger-link {
+.menu-panel {
+  li,
+  li.heading {
+    a.widget-link.custom-hamburger-link {
       display: block;
       font-size: 16px;
       line-height: 26px;
@@ -70,8 +71,8 @@ body {
         display: none;
       }
     }
-  
-} 
+  }
+}
 
 .desktop-view .vmo,
 .mobile-view .vdo {
