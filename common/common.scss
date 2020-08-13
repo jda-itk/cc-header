@@ -59,6 +59,7 @@ body {
 }
 
 .menu-panel {
+  li,
   li.heading {
     a.widget-link.custom-hamburger-link {
       display: block;
@@ -71,7 +72,7 @@ body {
       @media (min-width: 601px) {
         display: none;
       }
-
+      
       &:hover {
         text-decoration: none;
         span:first-child {
